@@ -32,10 +32,13 @@ body {
 .container {
   height: 50vh;
   width: 35vw;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px 0px rgb(217, 217, 217);
 }
 
 .top {
   background-color: white;
+  border-radius: 10px 10px 0 0;
 }
 
 #top-title {
@@ -70,12 +73,14 @@ body {
   width: 50%;
   background-color: #4abebd;
   padding: 3vh 2vw;
+  border-radius: 0 0 10px 0px;
 }
 
 .left {
   width: 50%;
   background-color: #2bb3b1;
   padding: 3vh 2vw;
+  border-radius: 0 0 0px 10px;
 }
 
 .bottom-title {
@@ -83,9 +88,10 @@ body {
   font-weight: 200;
 }
 
-.bottom-subtitle {
+.bottom-subtitle-first {
   font-size: 8px;
   color: #c7ffff;
+  
 }
 
 .price {
@@ -105,4 +111,13 @@ body {
   color: #fcffbd;
   margin-top: 4vh;
   box-shadow: 0px 2px 5px #868686cc;
+}
+
+.bottom-subtitle-second {
+  font-size: 8px;
+  color: #c7ffff;
+  display: block;
+  margin-top: 1.5vh;
+  width: 12vw;
+  line-height: 3vh;
 }
