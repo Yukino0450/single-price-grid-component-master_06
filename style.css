@@ -1,0 +1,108 @@
+/*#region*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/*#endregion*/
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%;);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  background-color: #e6eff6;
+  display: flex;
+  align-items: center; /*+display:flex;で上下の中央寄せ、*/
+  flex-direction: column;
+  justify-content: center; /*+display:flex;で*左右の中央寄せ、*/
+  height: 100vh; /*bodyの高さを広げるため*/
+}
+
+.container {
+  height: 50vh;
+  width: 35vw;
+}
+
+.top {
+  background-color: white;
+}
+
+#top-title {
+  color: var(--Cyan);
+}
+
+#top-subtitle {
+  color: var(--BrightYellow);
+  margin-bottom: 8px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+#inside-top {
+  padding: 5vh 3vw;
+  display: block;
+}
+
+.paragraph {
+  margin-top: 0;
+  font-size: 10px;
+  color: hsl(218, 22%, 67%);
+  font-weight: smaller;
+}
+
+.bottom {
+  display: flex;
+  color: white;
+}
+
+.right {
+  width: 50%;
+  background-color: #4abebd;
+  padding: 3vh 2vw;
+}
+
+.left {
+  width: 50%;
+  background-color: #2bb3b1;
+  padding: 3vh 2vw;
+}
+
+.bottom-title {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.bottom-subtitle {
+  font-size: 8px;
+  color: #c7ffff;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 17px;
+  display: block;
+  margin-top: 1.5vh;
+}
+
+.SignUpBotton {
+  background-color: #bfdf32;
+  text-align: center;
+  padding: 1.5vh 0;
+  border-radius: 8px;
+  font-size: 8px;
+  font-weight: bold;
+  color: #fcffbd;
+  margin-top: 4vh;
+  box-shadow: 0px 2px 5px #868686cc;
+}
