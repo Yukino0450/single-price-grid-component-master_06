@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 /*#region*/
 .attribution {
   font-size: 11px;
@@ -15,8 +16,6 @@
   --GrayishBlue: hsl(218, 22%, 67%;);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
-
 body {
   font-size: 16px;
   font-family: "Karla", sans-serif;
@@ -30,10 +29,9 @@ body {
 }
 
 .container {
-  height: 50vh;
   width: 35vw;
   border-radius: 10px;
-  box-shadow: 0px 20px 20px 0px rgb(217, 217, 217);
+  box-shadow: 0px 10px 10px 5px rgb(215, 218, 239);
 }
 
 .top {
@@ -70,14 +68,14 @@ body {
 }
 
 .right {
-  width: 50%;
+  width: 18vw;
   background-color: #4abebd;
   padding: 3vh 2vw;
   border-radius: 0 0 10px 0px;
 }
 
 .left {
-  width: 50%;
+  width: 18vw;
   background-color: #2bb3b1;
   padding: 3vh 2vw;
   border-radius: 0 0 0px 10px;
@@ -91,7 +89,7 @@ body {
 .bottom-subtitle-first {
   font-size: 8px;
   color: #c7ffff;
-  
+  font-weight: 400;
 }
 
 .price {
@@ -104,13 +102,19 @@ body {
 .SignUpBotton {
   background-color: #bfdf32;
   text-align: center;
-  padding: 1.5vh 0;
-  border-radius: 8px;
+  width: 12vw;
+  height: 5vh;
+  border-radius: 3px;
   font-size: 8px;
   font-weight: bold;
   color: #fcffbd;
   margin-top: 4vh;
   box-shadow: 0px 2px 5px #868686cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .bottom-subtitle-second {
@@ -120,4 +124,69 @@ body {
   margin-top: 1.5vh;
   width: 12vw;
   line-height: 3vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 80vh;
+  }
+
+  .paragraph {
+    line-height: 3vh;
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  #inside-top {
+    padding: 3vh 3vw;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 41vw;
+    border-radius: 0;
+  }
+
+  .right {
+    width: 41vw;
+    height: 22vh;
+    border-radius: 0 0 10px 10px;
+
+  }
+
+  .bottom-title {
+    font-size: 15px;
+    display: block;
+  }
+
+  .price {
+    font-size: 22px;
+    margin-bottom: 2vh;
+  }
+
+  .SignUpBotton {
+    font-size: 12px;
+    width: 37vw;
+    height: 4.5vh;
+    margin-top: 2vh;
+  }
+
+  .bottom-subtitle-first {
+    font-size: 12px;
+  }
+  .bottom-top {
+    margin-left: 2vw;
+  }
+
+  .bottom-subtitle-second {
+    font-size: 8px;
+    display: inline;
+  }
 }
